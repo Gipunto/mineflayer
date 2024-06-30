@@ -5,3 +5,12 @@ if (typeof process !== 'undefined' && !process.browser && process.platform !== '
 }
 
 module.exports = require('./lib/loader.js')
+
+const mineflayer = require('mineflayer')
+
+const bot = mineflayer.createBot({
+    host: 'vanillagiusse.aternos.me',
+    port: 23750,
+    username: 'STAFF',
+    type: 'mojang'
+})
